@@ -8,8 +8,8 @@ import com.ar.bdnews.databinding.UserInputItemBinding
 
 class user_adapter (var userList: MutableList<user_input>): RecyclerView.Adapter<UserViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
-        val binding= UserInputItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-            return UserViewHolder(binding)
+        val Bindings= UserInputItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            return UserViewHolder(Bindings)
     }
 
     override fun getItemCount(): Int {
