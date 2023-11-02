@@ -4,4 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="lavender">#8692f7</color>
     <color name="user_list">#D8D8EF</color>
+    <color name="top_backs">#2d4159</color>
+    <color name="main_back">#273258</color>
+    <color name="less_high_light">#ccdde7</color>
 </resources>

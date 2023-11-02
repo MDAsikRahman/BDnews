@@ -4,15 +4,192 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/main_back">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/top_back_bottom_radious"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/appTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Biography "
+            android:textAppearance="@style/TextAppearance.Material3.DisplaySmall"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TableLayout
+        android:id="@+id/tableLayout1.1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="33dp"
+        android:background="@drawable/layers1_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLayout"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv1.1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Bangladeshi Poets"
+            android:textColor="@color/less_high_light"
+            android:textSize="20dp"
+
+            />
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1.2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="33dp"
+        android:background="@drawable/layers1_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLayout"
+        >
+
+        <TextView
+            android:id="@+id/tv1.2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Art and Literature"
+            android:textColor="@color/less_high_light"
+            android:textSize="20dp"
+
+            />
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1.3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="33dp"
+        android:background="@drawable/layers1_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout1.1"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv1.3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Art and Literature"
+            android:textColor="@color/less_high_light"
+            android:textSize="20dp"
+
+            />
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1.4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="33dp"
+        android:background="@drawable/layers1_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout1.2"
+        >
+
+        <TextView
+            android:id="@+id/tv1.4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Art and Literature"
+            android:textColor="@color/less_high_light"
+            android:textSize="20dp"
+
+            />
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1.5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="33dp"
+        android:background="@drawable/layers1_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout1.3"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv1.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Art and Literature"
+            android:textColor="@color/less_high_light"
+            android:textSize="20dp"
+
+            />
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1.6"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="33dp"
+        android:background="@drawable/layers1_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout1.4"
+        >
+
+        <TextView
+            android:id="@+id/tv1.6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Art and Literature"
+            android:textColor="@color/less_high_light"
+            android:textSize="20dp"
+
+            />
+
+    </TableLayout>
+
+
+
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
